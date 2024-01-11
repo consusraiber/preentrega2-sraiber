@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.imgLogo {
+    width: 150px;
+}
+
+.navbar-toggler-icon {    
+    background-color: #910a3b;
+}
+
+/*Header*/
+
+.encabezado {
+    background-color: black;
+
+}
+
+.menuNav li a {
+    text-transform: uppercase;
+    color: #910a3b;
+    font-size: 1.4rem;
+    border-left: 1px solid #910a3b;
+    border-right: 1px solid #910a3b;
+    padding: 0;
+}
+
+.menuNav a:hover {
+    background-color: black;
+    color: #029ae6;
+}
+
+/*Banner*/
+
+.banner {
+    background-image: url(../img/fotobanner.jpg);
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bannerContenido h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #029ae6;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannerContenido h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #910a3b;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannerContenido p {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Quienes somos*/
+
+.servicios h2 {
+    color: #910a3b;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.tarjeta img {
+    max-width: 100%;
+}
+
+.tarjeta h3 {
+    margin: 10px 0;
+    color: #910a3b;
+    font-size: 2rem;
+}
+.tarjeta p {
+    margin: 10px 0;
+    color: white;
+    font-size: 1rem;
+}
+
+.contenedorQuienesomos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/*Servicios*/
+
+.servicios {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid #910a3b;
+}
+
+.servicios p {
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.tarjetaServicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid #029ae6;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.tarjetaServicio h3 {
+    color: #910a3b;
+    text-align: center;
+}
+
+.tarjetaServicio p {
+    margin: 10px 0;
+    color: white;
+}
+
+.tarjetaServicio button {
+    background-color: #029ae6;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.tarjetaServicio button:hover {
+    background-color: #910a3b;
+}
+
+/*Testimonios*/
+
+.contenedorTestimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.contenedorTestimonios p {
+    margin-top: 30px;
+}
+
+.videoTestigos {
+    width: 100%;
+    max-width: 560px;
+    height: 315px; /* Ajusta la altura según sea necesario */
+    align-self: center; /* Centra verticalmente dentro del contenedor */
+}
+
+/*Contacto*/
+.contacto {
+    position: relative;
+    color: #910a3b;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid #910a3b;
+    text-align: center;   
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer h3, .footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #910a3b;
+}
+
+.infoContacto p,
+.redesSociales a {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.infoContacto, .redesSociales {
+    flex: 1;
+}
+
+.redesSociales {
+    text-align: right;
+}
+
+.redesSociales a {
+    color: #029ae6;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.redesSociales a:hover {
+    color: #910a3b;
+}
+
+.footer i {
+    margin-right: 10px;
+}
+
