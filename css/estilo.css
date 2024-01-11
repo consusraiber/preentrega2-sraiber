@@ -167,6 +167,7 @@ body {
 .tarjetaServicio p {
     margin: 10px 0;
     color: white;
+    text-align: center;
 }
 
 .tarjetaServicio button {
@@ -297,3 +298,66 @@ form textarea {
     margin-right: 10px;
 }
 
+/*Lo hago responsive*/
+
+/*Vista tablet*/
+/*768px hasta 1023px*/
+
+@media (max-width:1023px) {
+   
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /*Banner*/
+    
+    .bannerContenido h1 {
+        font-size: 3rem;
+    }
+    
+    .bannerContenido h2 {
+        font-size: 2rem;
+    }
+    
+   /*Ajustes específicos para la vista móvil*/
+/*0 hasta 760px*/
+
+@media (max-width:768px) {
+
+    /*Destinos*/
+    .contenedorDestinos {
+        grid-template-columns: 1fr;
+    }
+}
+    
+    /*Servicios*/
+
+    .servicios h2 {
+        font-size: 1.5rem;
+    }
+
+    .servicios p {
+        font-size: 1rem;
+    }
+
+    /*Footer*/
+    .footerContenido {
+    flex-direction: column;
+    text-align: center;
+    }
+
+}
+
+/*Ajustes específicos para la vista móvil*/
+/*0 hasta 760px*/
+
+@media (max-width:768px) {
+
+    .bannerContenido p {
+        font-size: 0.5rem;
+    }
+}
