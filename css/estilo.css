@@ -122,6 +122,7 @@ body {
     margin: 10px 0;
     color: white;
     font-size: 1rem;
+    text-align: center;
 }
 
 .contenedorQuienesomos {
@@ -337,11 +338,11 @@ form textarea {
     /*Servicios*/
 
     .servicios h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .servicios p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     /*Footer*/
@@ -358,6 +359,10 @@ form textarea {
 @media (max-width:768px) {
 
     .bannerContenido p {
-        font-size: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .infoContacto, .redesSociales {
+        text-align: center;
     }
 }
